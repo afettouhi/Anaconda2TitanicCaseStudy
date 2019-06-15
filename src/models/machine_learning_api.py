@@ -50,4 +50,5 @@ def make_prediction():
 
 if __name__ == '__main__':
     # host flask app at port 10001
-    app.run(port=10001, debug=True)
+    # added use_reloader=False
+    app.run(port=10001, debug=True, use_reloader=False)
